@@ -1,0 +1,32 @@
+/* Additional styles for forcing transitions */
+.page-transition {
+    opacity: 1 !important; /* Force visibility */
+    visibility: visible !important;
+}
+
+/* New swipe transition effect */
+.transition-swipe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #e04646 0%, #fdb813 50%, #2a9d8f 100%);
+    transform: translateX(0);
+    z-index: 9999;
+    will-change: transform;
+}
+
+/* Remove old transitions */
+.transition-shape,
+.transition-shape.shape1,
+.transition-shape.shape2,
+.transition-shape.shape3 {
+    display: none !important;
+}
+
+/* Hide any old animations */
+.animate-enter,
+.animate-exit {
+    animation: none !important;
+}

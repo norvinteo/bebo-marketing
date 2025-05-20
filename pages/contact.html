@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bebo Studio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/inner-pages.css">
+    <link rel="stylesheet" href="../assets/css/additional-elements.css">
+    <link rel="stylesheet" href="../assets/css/disable-transitions.css"><!-- Disable all transitions -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <div class="noise-overlay"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo-new.svg" alt="Bebo Studio" class="logo-image" style="max-height: 40px; width: 40px; display: block;">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="work.html" class="nav-link">Work</a></li>
+                    <li><a href="contact.html" class="nav-link btn-contact active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title split-text">
+                    <span class="word">Get</span>
+                    <span class="word">in</span>
+                    <span class="word highlight">Touch</span>
+                </h1>
+                <p class="page-subtitle">Let's start the conversation about your next project.</p>
+            </div>
+            <div class="header-accent"></div>
+        </section>
+
+        <section class="contact-page-section">
+            <div class="container">
+                <div class="contact-flex">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <h2>Let's create something <span class="highlight">beautiful</span> together</h2>
+                            <p>Have a project in mind or want to explore how we can help your business? We'd love to hear from you. Reach out to us through any of the channels below or fill out the form to start the conversation.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <!-- Address section removed as we don't have a physical office yet -->
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email Us</h3>
+                                    <a href="mailto:hello@bebo.studio">hello@bebo.studio</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Call Us</h3>
+                                    <p>+65 1234 5678</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 10V14C20 14.55 19.55 15 19 15H17V19C17 19.55 16.55 20 16 20H8C7.45 20 7 19.55 7 19V15H5C4.45 15 4 14.55 4 14V10C4 9.45 4.45 9 5 9H7V5C7 4.45 7.45 4 8 4H16C16.55 4 17 4.45 17 5V9H19C19.55 9 20 9.45 20 10ZM14 11H10V15H14V11Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Connect</h3>
+                                    <div class="social-links small">
+                                        <a href="#" class="social-link">In</a>
+                                        <a href="#" class="social-link">Ig</a>
+                                        <a href="#" class="social-link">Fb</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map removed as we don't have a physical office yet -->
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Send us a message</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name*</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject*</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message*</label>
+                                <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service of Interest</label>
+                                <select id="service" class="form-control">
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="logo">Logo Design</option>
+                                    <option value="web">Website Design</option>
+                                    <option value="print">Print Design</option>
+                                    <option value="photo">Photography</option>
+                                    <option value="systems">Systems Development</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" class="form-control">
+                                    <option value="" selected disabled>Select budget range</option>
+                                    <option value="1000-3000">$1,000 - $3,000</option>
+                                    <option value="3000-5000">$3,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                    <option value="10000-20000">$10,000 - $20,000</option>
+                                    <option value="20000+">$20,000+</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary contact-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Common Questions</span>
+                    <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                    <p class="section-subtitle">Answers to questions we often receive from new clients</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your typical process for a new project?</h3>
+                            <div class="faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Our process follows six key stages: Discover, Define, Design, Develop, Deploy, and Delight. We begin by understanding your business needs and goals, then define the project scope, create visual designs, build the technical components, implement the solution, and measure its success. Throughout this process, we maintain close communication with our clients to ensure the final product meets or exceeds expectations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long does a typical project take?</h3>
+                            <div class="faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary depending on complexity and scope. A basic branding project might take 4-6 weeks, while a comprehensive website with custom functionality could take 8-12 weeks or more. During our initial consultation, we'll provide a more accurate timeline based on your specific project requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is your pricing structure?</h3>
+                            <div class="faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We typically work on a project-based pricing model, providing a comprehensive quote after understanding your project's scope and requirements. For ongoing relationships, we also offer retainer packages with monthly billing. Our pricing reflects the value we bring to your business through our combined expertise in both design and systems development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer ongoing support after project completion?</h3>
+                            <div class="faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer various support options after project completion. For websites and systems, we provide maintenance packages that include regular updates, security monitoring, and technical support. For branding projects, we offer retainer services for ongoing design needs and brand management. We believe in building long-term relationships with our clients and supporting their continued success.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How involved will I be in the project?</h3>
+                            <div class="faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Client collaboration is essential to our process. While we handle the heavy lifting of design and development, we involve you at key milestones for feedback and approval. This typically includes the initial discovery phase, concept review, design approval, and pre-launch testing. We strive to find the right balance—keeping you informed and involved without overwhelming you with technical details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">BEBO STUDIO</div>
+                    <p class="footer-tagline">We make pretty things work.</p>
+                    <a href="mailto:hello@bebo.studio" class="footer-email">hello@bebo.studio</a>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#branding">Branding</a></li>
+                        <li><a href="services.html#logo">Logo Design</a></li>
+                        <li><a href="services.html#web">Website Design</a></li>
+                        <li><a href="services.html#print">Print Design</a></li>
+                        <li><a href="services.html#photo">Photography</a></li>
+                        <li><a href="services.html#systems">Systems Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-connect">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">In</a>
+                        <a href="#" class="social-link">Ig</a>
+                        <a href="#" class="social-link">Fb</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Join our newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit" class="btn-submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Bebo Studio. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/no-transitions.js"></script>
+    
+    <!-- Inline script to force logo display -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Ensuring logo is visible");
+            // Force logo to be visible
+            const logoImage = document.querySelector('.logo-image');
+            if (logoImage) {
+                logoImage.style.display = "block";
+                logoImage.style.maxHeight = "40px";
+                logoImage.style.width = "40px";
+                
+                // Add fallback text if needed
+                logoImage.onerror = function() {
+                    console.log("Logo image failed to load, using text fallback");
+                    const logoContainer = logoImage.parentElement;
+                    const textLogo = document.createElement('span');
+                    textLogo.className = 'logo-text';
+                    textLogo.textContent = 'BEBO STUDIO';
+                    textLogo.style.color = '#1c3144';
+                    textLogo.style.fontWeight = '700';
+                    textLogo.style.fontSize = '1.5rem';
+                    textLogo.style.letterSpacing = '1px';
+                    textLogo.style.fontFamily = 'Montserrat, sans-serif';
+                    logoContainer.replaceChild(textLogo, logoImage);
+                };
+            } else {
+                console.log("Logo image not found");
+                // If logo image element not found, add text logo directly to nav
+                const logoContainer = document.querySelector('.logo');
+                if (logoContainer) {
+                    const textLogo = document.createElement('span');
+                    textLogo.className = 'logo-text';
+                    textLogo.textContent = 'BEBO STUDIO';
+                    textLogo.style.color = '#1c3144';
+                    textLogo.style.fontWeight = '700';
+                    textLogo.style.fontSize = '1.5rem';
+                    textLogo.style.letterSpacing = '1px';
+                    textLogo.style.fontFamily = 'Montserrat, sans-serif';
+                    logoContainer.querySelector('a').appendChild(textLogo);
+                }
+            }
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                
+                // Set initial state
+                gsap.set(answer, { height: 0, opacity: 0 });
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherAnswer = otherItem.querySelector('.faq-answer');
+                            const otherIcon = otherItem.querySelector('.faq-icon');
+                            
+                            gsap.to(otherAnswer, {
+                                height: 0,
+                                opacity: 0,
+                                duration: 0.4,
+                                ease: 'power3.out'
+                            });
+                            
+                            gsap.to(otherIcon.querySelector('path:nth-child(2)'), {
+                                opacity: 1,
+                                duration: 0.3
+                            });
+                        }
+                    });
+                    
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        
+                        // Get natural height of answer
+                        gsap.set(answer, { height: 'auto', opacity: 1 });
+                        const height = answer.offsetHeight;
+                        gsap.set(answer, { height: 0, opacity: 0 });
+                        
+                        gsap.to(answer, {
+                            height: height,
+                            opacity: 1,
+                            duration: 0.4,
+                            ease: 'power3.out'
+                        });
+                        
+                        gsap.to(icon.querySelector('path:nth-child(2)'), {
+                            opacity: 0,
+                            duration: 0.3
+                        });
+                    } else {
+                        item.classList.remove('active');
+                        
+                        gsap.to(answer, {
+                            height: 0,
+                            opacity: 0,
+                            duration: 0.4,
+                            ease: 'power3.out'
+                        });
+                        
+                        gsap.to(icon.querySelector('path:nth-child(2)'), {
+                            opacity: 1,
+                            duration: 0.3
+                        });
+                    }
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.querySelector('.contact-form');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission
+                const submitButton = contactForm.querySelector('.contact-submit');
+                const originalText = submitButton.textContent;
+                
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sending...';
+                
+                setTimeout(() => {
+                    const formData = new FormData(contactForm);
+                    let formValues = {};
+                    
+                    formData.forEach((value, key) => {
+                        formValues[key] = value;
+                    });
+                    
+                    console.log('Form data:', formValues);
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Show success message
+                    submitButton.textContent = 'Message Sent!';
+                    
+                    setTimeout(() => {
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                    }, 2000);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

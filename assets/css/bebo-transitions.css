@@ -1,0 +1,217 @@
+/* Bebo Studio Page Transition Effects - COMPLETELY DISABLED */
+
+/* Main transition container - DISABLED PERMANENTLY */
+.page-transition,
+.transition-swipe,
+.transition-shape,
+.transition-shape.shape1,
+.transition-shape.shape2,
+.transition-shape.shape3 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    z-index: -999 !important;
+}
+
+/* Pre-loader styles - DISABLED */
+.loader {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-logo {
+    margin-bottom: 1.5rem;
+    transform: scale(1);
+    opacity: 1;
+    animation: logoEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.loader-logo-img {
+    max-width: 80px;
+    height: auto;
+}
+
+.loader-text {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Text reveal animation in loader */
+.text-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-reveal.text-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-reveal.highlight {
+    color: var(--accent-gold, #fdb813);
+}
+
+.text-reveal.bold {
+    font-weight: 700;
+}
+
+/* Navigation link animations */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    opacity: 1; /* Always visible */
+    transform: translateY(0); /* Reset transform */
+}
+
+.nav-link.animate-in {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.link-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--accent-gold, #fdb813);
+    transition: width 0.3s ease;
+}
+
+/* Hero section animations */
+.hero-title .word {
+    display: inline-block;
+    opacity: 1; /* Always visible */
+    transform: translateY(0); /* Reset transform */
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s ease;
+}
+
+.hero-title .highlight {
+    color: var(--accent-gold, #fdb813);
+}
+
+.hero-title .bold {
+    font-weight: 700;
+}
+
+.hero-tagline,
+.hero-buttons .btn {
+    opacity: 1; /* Always visible */
+    transform: translateY(0); /* Reset transform */
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Hover animations for service cards */
+.service-card-inner {
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.service-card:hover .service-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* About section hover effects */
+.about-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--vibrant-red, #e04646);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    mix-blend-mode: multiply;
+}
+
+.about-image:hover .image-overlay {
+    opacity: 0.3;
+}
+
+/* Work showcase hover effects */
+.work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(28, 49, 68, 0.9) 0%, rgba(28, 49, 68, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.work-item:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-meta {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition-delay: 0.1s;
+}
+
+.work-item:hover .work-meta {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Logo entrance animation */
+@keyframes logoEntrance {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Custom cursor follower animation */
+.cursor-follower {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(253, 184, 19, 0.3); /* Accent Gold with transparency */
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.07s, width 0.3s, height 0.3s, background-color 0.3s;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default, shown with JS */
+}
+
+.cursor-follower.active {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(224, 70, 70, 0.2); /* Vibrant Red with transparency */
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .cursor-follower {
+        display: none !important;
+    }
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Bebo Studio</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/inner-pages.css">
+    <link rel="stylesheet" href="../assets/css/additional-elements.css">
+    <link rel="stylesheet" href="../assets/css/disable-transitions.css"><!-- Disable all transitions -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <div class="noise-overlay"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo-new.svg" alt="Bebo Studio" class="logo-image" style="max-height: 40px; width: 40px; display: block;">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="work.html" class="nav-link active">Work</a></li>
+                    <li><a href="contact.html" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title split-text">
+                    <span class="word">Our</span>
+                    <span class="word highlight">Portfolio</span>
+                </h1>
+                <p class="page-subtitle">A showcase of our recent projects and collaborations.</p>
+            </div>
+            <div class="header-accent"></div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="web">Website</button>
+                    <button class="filter-btn" data-filter="print">Print</button>
+                    <button class="filter-btn" data-filter="photo">Photography</button>
+                    <button class="filter-btn" data-filter="systems">Systems</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="branding,print">
+                        <div class="portfolio-image" style="background-color: var(--vibrant-red);"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Rising Sun Bakery</h3>
+                                <span class="portfolio-category">Branding, Print Design</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web,systems">
+                        <div class="portfolio-image" style="background-color: var(--deep-navy);"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Quantum Financial</h3>
+                                <span class="portfolio-category">Website Design, System Development</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="branding,photo">
+                        <div class="portfolio-image" style="background-color: var(--teal);"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Urban Green</h3>
+                                <span class="portfolio-category">Branding, Photography</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image" style="background-color: var(--accent-gold);"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Horizon Travel</h3>
+                                <span class="portfolio-category">Website Design</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="branding,print">
+                        <div class="portfolio-image" style="background-color: #6a3d9a;"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Pulse Fitness</h3>
+                                <span class="portfolio-category">Branding, Print Design</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="photo">
+                        <div class="portfolio-image" style="background-color: #4292c6;"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Oceanic Collection</h3>
+                                <span class="portfolio-category">Product Photography</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="systems">
+                        <div class="portfolio-image" style="background-color: #b15928;"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Logistics Hub</h3>
+                                <span class="portfolio-category">Systems Development</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="branding,web">
+                        <div class="portfolio-image" style="background-color: #33a02c;"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Evergreen Capital</h3>
+                                <span class="portfolio-category">Branding, Website Design</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="print,photo">
+                        <div class="portfolio-image" style="background-color: #a6cee3;"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-meta">
+                                <h3>Culinary Seasons</h3>
+                                <span class="portfolio-category">Print Design, Photography</span>
+                                <a href="#" class="btn-text">
+                                    <span>View Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Client Testimonials</span>
+                    <h2 class="section-title">What Our <span class="highlight">Clients</span> Say</h2>
+                    <p class="section-subtitle">Feedback from businesses we've partnered with</p>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonials-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Bebo Studio transformed our brand identity with a design that perfectly captures our essence. They didn't just make it look good—they ensured every element of our digital presence works seamlessly."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"></div>
+                                <div class="author-info">
+                                    <h4>Sarah Chen</h4>
+                                    <span>CEO, Rising Sun Bakery</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The team at Bebo truly lives up to their 'pretty things work' philosophy. Our website not only looks stunning but has dramatically improved our lead generation and customer engagement."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"></div>
+                                <div class="author-info">
+                                    <h4>Michael Tan</h4>
+                                    <span>Director, Quantum Financial</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"What sets Bebo Studio apart is their ability to understand both design and technical requirements. They created a system that not only reflects our brand beautifully but also streamlines our operations."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image"></div>
+                                <div class="author-info">
+                                    <h4>Lisa Wong</h4>
+                                    <span>Founder, Urban Green</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-nav">
+                        <button class="nav-prev">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="nav-dots">
+                            <span class="nav-dot active"></span>
+                            <span class="nav-dot"></span>
+                            <span class="nav-dot"></span>
+                        </div>
+                        <button class="nav-next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to make <span class="highlight">pretty</span> things <span class="bold">work</span>?</h2>
+                    <p class="cta-text">Let's collaborate to create solutions that are both beautiful and functional.</p>
+                    <a href="contact.html" class="btn btn-primary">Get in touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">BEBO STUDIO</div>
+                    <p class="footer-tagline">We make pretty things work.</p>
+                    <a href="mailto:hello@bebo.studio" class="footer-email">hello@bebo.studio</a>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#branding">Branding</a></li>
+                        <li><a href="services.html#logo">Logo Design</a></li>
+                        <li><a href="services.html#web">Website Design</a></li>
+                        <li><a href="services.html#print">Print Design</a></li>
+                        <li><a href="services.html#photo">Photography</a></li>
+                        <li><a href="services.html#systems">Systems Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-connect">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">In</a>
+                        <a href="#" class="social-link">Ig</a>
+                        <a href="#" class="social-link">Fb</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Join our newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit" class="btn-submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Bebo Studio. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/no-transitions.js"></script>
+    
+    <!-- Inline script to force logo display -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Ensuring logo is visible");
+            // Force logo to be visible
+            const logoImage = document.querySelector('.logo-image');
+            if (logoImage) {
+                logoImage.style.display = "block";
+                logoImage.style.maxHeight = "40px";
+                logoImage.style.width = "40px";
+                
+                // Add fallback text if needed
+                logoImage.onerror = function() {
+                    console.log("Logo image failed to load, using text fallback");
+                    const logoContainer = logoImage.parentElement;
+                    const textLogo = document.createElement('span');
+                    textLogo.className = 'logo-text';
+                    textLogo.textContent = 'BEBO STUDIO';
+                    textLogo.style.color = '#1c3144';
+                    textLogo.style.fontWeight = '700';
+                    textLogo.style.fontSize = '1.5rem';
+                    textLogo.style.letterSpacing = '1px';
+                    textLogo.style.fontFamily = 'Montserrat, sans-serif';
+                    logoContainer.replaceChild(textLogo, logoImage);
+                };
+            } else {
+                console.log("Logo image not found");
+                // If logo image element not found, add text logo directly to nav
+                const logoContainer = document.querySelector('.logo');
+                if (logoContainer) {
+                    const textLogo = document.createElement('span');
+                    textLogo.className = 'logo-text';
+                    textLogo.textContent = 'BEBO STUDIO';
+                    textLogo.style.color = '#1c3144';
+                    textLogo.style.fontWeight = '700';
+                    textLogo.style.fontSize = '1.5rem';
+                    textLogo.style.letterSpacing = '1px';
+                    textLogo.style.fontFamily = 'Montserrat, sans-serif';
+                    logoContainer.querySelector('a').appendChild(textLogo);
+                }
+            }
+            
+            // Portfolio filtering 
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Filter items
+                    portfolioItems.forEach(item => {
+                        const categories = item.getAttribute('data-category').split(',');
+                        
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            gsap.to(item, {
+                                opacity: 1,
+                                scale: 1,
+                                duration: 0.4,
+                                ease: 'power3.out',
+                                clearProps: 'all'
+                            });
+                            item.style.display = 'block';
+                        } else {
+                            gsap.to(item, {
+                                opacity: 0,
+                                scale: 0.9,
+                                duration: 0.4,
+                                ease: 'power3.out',
+                                onComplete: () => {
+                                    item.style.display = 'none';
+                                }
+                            });
+                        }
+                    });
+                });
+            });
+            
+            // Testimonials slider
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.querySelector('.nav-prev');
+            const nextBtn = document.querySelector('.nav-next');
+            const dots = document.querySelectorAll('.nav-dot');
+            let currentIndex = 0;
+            
+            function updateSlider() {
+                // Update track position
+                const offset = currentIndex * -100;
+                gsap.to(track, {
+                    xPercent: offset,
+                    duration: 0.6,
+                    ease: 'power3.out'
+                });
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            prevBtn.addEventListener('click', () => {
+                currentIndex = Math.max(0, currentIndex - 1);
+                updateSlider();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = Math.min(cards.length - 1, currentIndex + 1);
+                updateSlider();
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

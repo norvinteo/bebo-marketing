@@ -1,0 +1,37 @@
+/* Disable all transitions completely */
+.page-transition,
+.transition-swipe,
+.transition-shape,
+.transition-shape.shape1,
+.transition-shape.shape2,
+.transition-shape.shape3 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    z-index: -999 !important;
+}
+
+/* Override any transition forcing attempts */
+.force-transitions .page-transition,
+.transition-swipe[style],
+[class*="transition-"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Disable any transition-related animations */
+.animate-enter,
+.animate-exit,
+[class*="transition-animation"] {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Ensure immediate page display */
+body {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
