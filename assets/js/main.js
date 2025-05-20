@@ -5,14 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize GSAP plugins
     gsap.registerPlugin(ScrollTrigger, TextPlugin);
     
-    // Fix missing logo issue
+    // Fix logo display issues - preserve the logo2.svg if it's in the HTML
     const logoImages = document.querySelectorAll('.logo-image');
     logoImages.forEach(img => {
-        // Check if we're on an inner page and adjust path accordingly
+        // Check if we're on an inner page
         const isInnerPage = window.location.pathname.includes('/pages/');
         
-        // Set correct path to logo based on page location
-        img.src = isInnerPage ? '../assets/images/logo.svg' : 'assets/images/logo.svg';
+        // Only replace the path if it's not already logo2.svg
+        if (!img.src.includes('logo2.svg')) {
+            // Set correct path to logo based on page location
+            img.src = isInnerPage ? '../assets/images/logo2.svg' : 'assets/images/logo2.svg';
+        }
         
         // Make sure the logo is visible
         img.style.display = 'block';

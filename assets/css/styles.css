@@ -353,13 +353,14 @@ header .container {
     z-index: 101;
 }
 
-.bebo-logo {
+.logo-image {
     height: 40px;
     width: auto;
     transition: var(--transition);
+    display: block;
 }
 
-header.scrolled .bebo-logo {
+header.scrolled .logo-image {
     height: 35px;
 }
 

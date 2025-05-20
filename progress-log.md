@@ -204,10 +204,15 @@ bebo-marketing/
   - Added better error handling in case the logo fails to load
 - Updated service cards to use proper image assets instead of placeholders
 - Fixed inconsistent logo implementation across all pages:
-  - Ensured logo-new.svg is used consistently on all pages
-  - Applied consistent logo styling (max-height: 40px; width: 40px; display: block)
+  - Ensured logo2.svg is used consistently on all pages
+  - Applied consistent logo styling (max-height: 40px; width: auto; display: block)
   - Added error handling and text fallback to all pages
   - Maintained page-specific JavaScript functionality while adding logo display script
+- Fixed logo2.svg not showing in the navigation:
+  - Updated main.js to preserve logo2.svg in the HTML rather than replacing it with logo.svg
+  - Fixed inline script in the HTML file to preserve width:auto instead of width:40px
+  - Added explicit CSS styling for .logo-image in styles.css
+  - Ensured correct rendering of the SVG logo on all devices and browsers
   
 ## Changes (May 20, 2025) - Enhanced Page Transitions
 - Completely rebuilt the page transition system based on Dynasty Forklift implementation:
